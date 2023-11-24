@@ -90,12 +90,12 @@ export default class BaiTapGlasses extends Component {
 
     const overlayStyle = {
       position: "absolute",
-      top: "4%", // Adjust the position as needed
-      left: "50%", // Adjust the position as needed
+      top: "4%",
+      left: "50%",
       transform: "translate(-50%, -50%)",
       zIndex: 1,
-      background: "rgba(0, 0, 0, 0.5)", // Adjust the overlay color and opacity
-      width: "100%", // Make the overlay full width
+      background: "rgba(0, 0, 0, 0.5)",
+      width: "100%",
     };
 
     const modelImages = Array.from({ length: 2 }).map((_, index) => {
@@ -139,7 +139,7 @@ export default class BaiTapGlasses extends Component {
                 >
                   <p
                     style={{
-                      color: "#800080", // Purple color font
+                      color: "#800080",
                       fontSize: "14px",
                       marginBottom: "0px",
                     }}
@@ -148,7 +148,7 @@ export default class BaiTapGlasses extends Component {
                   </p>
                   <p
                     style={{
-                      color: "#ffffff", // White color font
+                      color: "#ffffff",
                       fontSize: "14px",
                       marginBottom: "0px",
                     }}
@@ -157,7 +157,7 @@ export default class BaiTapGlasses extends Component {
                   </p>
                   <p
                     style={{
-                      color: "black", // White color font
+                      color: "black",
                       fontSize: "13px",
                       fontWeight: "500",
                       marginBottom: "0px",
@@ -195,7 +195,6 @@ export default class BaiTapGlasses extends Component {
         className="col-2 text-center mx-auto"
         style={{ cursor: "pointer" }}
         onClick={() => {
-          // Check if the clicked glass should be applied to the right model
           if (
             this.state.selectedGlass === null ||
             this.state.selectedGlass.id !== glass.id
